@@ -1,0 +1,1 @@
+Ejercicio web-portfolio: https://github.com/TheBridge-FullStackDeveloper/fswd-ft-sept-21-ramp-up/blob/main/src/ejercicio/ejercicio-web-personal.md
