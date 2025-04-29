@@ -2,4 +2,76 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
+
+body{
+    font-family: 'Roboto Mono',  serif;
+}
+
+.flex-container{
+    display: flex;
+}
+
+
+
+/*Header*/
+header{
+    margin-left: 8%;
+}
+header::after{
+    content: 'Web de Mikel';
+}
+
+/*Navigation*/
+nav{
+    position: sticky;
+    top: 0;
+    justify-items: center;
+    background-color: burlywood;
+    z-index: 1000;
+}
+nav ul li{
+    display: inline;
+}
+
+/*Biografia*/
+.sobre-mi{
+    margin: 5% 20% 10% 20% ;
+}
+.sobre-mi img{
+    border-radius: 300px;
+    width: 300px;
+    height: 300px;
+}
+.experiencia{
+    margin: 5% 10% 10% 10% ;
+}
+.experiencia img{
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.estudios{
+    margin: 0% 10% 5% 10% ;
+}
+
+/*Portfolio*/
+.front-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto);  
+    gap: 1rem; 
+}
+
+.back-end-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto);  
+    gap: 1rem; 
+}
+.front-grid div, .back-end-grid div {
+    background: red;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
