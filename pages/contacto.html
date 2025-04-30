@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="../css/main.css">
-    </head>
-    <body>
-        <header><h1>Contacto</h1></header>
-        <main>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="biografia.html">Biografia</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <form>
-                <fieldset>
-                    <legend>Reunión</legend>
+
+<head>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <form>
+            <fieldset>
+                <legend>Reunión</legend>
+                <div>
                     <label for="tipo-reunion">Tipo de reunión:</label>
                     <select id="tipo-reunion" name="tipo-reunion">
                         <option value="email">Correo electrónico</option>
@@ -25,27 +35,45 @@
                         <option value="llamada">Llamada telefónica</option>
                         <option value="presencial">Reunion</option>
                     </select>
+                </div>
+                <div>
                     <label for="dia">Dia:</label>
                     <input type="date" id="dia" name="dia"><br>
+                </div>
+                <div>
                     <label for="hora">Hora:</label>
                     <input type="time" id="hora" name="hora"><br>
+                </div>
+                <div>
                     <label for="mensaje">Mensaje:</label><br>
                     <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aqui" tabindex="2"></textarea>
-                </fieldset>
-                <fieldset>
-                    <legend>Datos de contacto</legend>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <div>
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" autofocus tabindex="1"><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" autofocus
+                        tabindex="1"><br>
+                </div>
+                <div>
                     <label for="apellidos">Apellidos:</label>
                     <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos"><br>
+                </div>
+                <div>
                     <label for="email">Correo Electrónico:</label>
                     <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com"><br>
+                </div>
+                <div>
                     <label for="telefono">Teléfono:</label>
                     <input type="tel" id="telefono" name="telefono" placeholder="123-456-7890">
-                </fieldset>
-                <input type="reset" value="Limpiar formulario" tabindex="-1">
-                <input type="submit" value="Enviar">
-            </form>
-        </main>
-    </body> 
+                </div>
+            </fieldset>
+            <input type="reset" value="Limpiar formulario" tabindex="-1">
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+
 </html>

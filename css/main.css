@@ -54,24 +54,91 @@ nav ul li{
 .estudios{
     margin: 0% 10% 5% 10% ;
 }
+  /* Móvil pequeño */
+  @media only screen and (min-width: 576px) {
+    /* Estilos específicos */
+    .flex-container{
+        display:block;
+    }
+  }
+  
+  /* Tablet */
+  @media only screen and (min-width: 768px) {
+    /* Estilos específicos */
+    
+  }
+  
+  /* Escritorio grande */
+  @media only screen and (min-width: 1200px) {
+    /* Estilos específicos */
+    .flex-container{
+        display:flex;
+    }
+  }
 
 /*Portfolio*/
 .front-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(2, auto);  
     gap: 1rem; 
 }
 
 .back-end-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(2, auto);  
     gap: 1rem; 
 }
 .front-grid div, .back-end-grid div {
     background: red;
     padding: 1rem;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid blue;
+    height: 100px;
+  }
+
+  /*Contacto*/
+  form{
+    justify-items: center;
+    margin-top: 5%;
+  }
+  fieldset{
+    justify-items: center;
+    padding: 20px;
+  }
+
+  /* Móvil pequeño */
+@media only screen and (min-width: 576px) {
+    /* Estilos específicos */
+    .front-grid{
+        grid-template-columns: repeat(1, 1fr);
+        background-color: pink; 
+    }
+    
+    .back-end-grid{
+        grid-template-columns: repeat(1, 1fr); 
+        background-color: pink; 
+    }
+  }
+  
+  /* Tablet */
+  @media only screen and (min-width: 768px) {
+    /* Estilos específicos */
+    .front-grid{
+        grid-template-columns: repeat(2, 1fr); 
+        background-color: orange;
+    }
+    
+    .back-end-grid{
+        grid-template-columns: repeat(2, 1fr); 
+        background-color: orange;
+    }
+  }
+  
+  /* Escritorio grande */
+  @media only screen and (min-width: 1200px) {
+    /* Estilos específicos */
+    .front-grid{
+        grid-template-columns: repeat(3, 1fr); 
+        background-color: blanchedalmond;
+    }
   }
