@@ -1,3 +1,4 @@
+/*----------------General-------------------*/
 *{
     padding: 0;
     border: 0;
@@ -12,8 +13,6 @@ body{
 .flex-container{
     display: flex;
 }
-
-
 
 /*Header*/
 header{
@@ -34,26 +33,74 @@ nav{
 nav ul li{
     display: inline;
 }
+/*Widths*/
+.width-50{
+    width: 50%;
+}
 
-/*Biografia*/
-.sobre-mi{
-    margin: 5% 20% 10% 20% ;
+.width-80{
+    width: 80%;
 }
-.sobre-mi img{
-    border-radius: 300px;
-    width: 300px;
-    height: 300px;
+/*Heights*/
+.height-50{
+    height: 50%;
 }
-.experiencia{
-    margin: 5% 10% 10% 10% ;
+.height-80{
+    height: 80%;
 }
-.experiencia img{
-    border-radius: 5px;
+
+/*Margins*/
+.margin-r-10p{
     margin-right: 10px;
 }
-.estudios{
-    margin: 0% 10% 5% 10% ;
+.margin-5-20{
+    margin: 5% 20%;
 }
+.margin-5-10{
+    margin: 5% 10%;
+}
+
+/*Radius*/
+.circle-radius{
+    border-radius: 300px;
+}
+
+.soft-circle-radius{
+    border-radius: 5px;
+}
+/*Display*/
+.display-flex{
+    display: flex;
+}
+.display-grid{
+    display: grid;
+}
+.grid-gap-1{
+    gap: 1rem; 
+}
+.grid-columns-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-columns-2{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+/*Debug*/
+.test1{
+    background-color: aqua;
+}
+.test2{
+    background-color: pink;
+}
+
+/*---------------Biografia----------------*/
+
+
+
+
+
   /* Móvil pequeño */
   @media only screen and (min-width: 576px) {
     /* Estilos específicos */
@@ -76,10 +123,15 @@ nav ul li{
     }
   }
 
+
+
+
+
+
 /*Portfolio*/
 .front-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    
+    
     gap: 1rem; 
 }
 
@@ -108,6 +160,10 @@ nav ul li{
 
   /* Móvil pequeño */
 @media only screen and (min-width: 576px) {
+    .m-grid-columns-1{
+        grid-template-columns: repeat(1, 1fr);
+        background-color: pink; 
+    }
     /* Estilos específicos */
     .front-grid{
         grid-template-columns: repeat(1, 1fr);
@@ -123,7 +179,7 @@ nav ul li{
   /* Tablet */
   @media only screen and (min-width: 768px) {
     /* Estilos específicos */
-    .front-grid{
+    .t-grid-columns-2{
         grid-template-columns: repeat(2, 1fr); 
         background-color: orange;
     }
@@ -137,8 +193,12 @@ nav ul li{
   /* Escritorio grande */
   @media only screen and (min-width: 1200px) {
     /* Estilos específicos */
-    .front-grid{
+    .grid-columns-3{
         grid-template-columns: repeat(3, 1fr); 
+        background-color: blanchedalmond;
+    }
+    .grid-columns-2{
+        grid-template-columns: repeat(2, 1fr); 
         background-color: blanchedalmond;
     }
   }
