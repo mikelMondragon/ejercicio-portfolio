@@ -102,7 +102,7 @@ nav ul li{
 
 
   /* Móvil pequeño */
-  @media only screen and (min-width: 576px) {
+  @media only screen and (max-width: 768px) {
     /* Estilos específicos */
     .flex-container{
         display:block;
@@ -159,7 +159,7 @@ nav ul li{
   }
 
   /* Móvil pequeño */
-@media only screen and (min-width: 576px) {
+@media only screen and (max-width: 768px) {
     .m-grid-columns-1{
         grid-template-columns: repeat(1, 1fr);
         background-color: pink; 
