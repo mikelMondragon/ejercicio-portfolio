@@ -3,7 +3,6 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 body{
@@ -192,9 +191,7 @@ nav ul li{
   }
 }
 
-.hover-animation-scale {
-  transition: transform 0.3s ease;
-}
+
 .hover-animation-scale:hover{
     animation: scaleAnimation 0.5s linear;
 }
