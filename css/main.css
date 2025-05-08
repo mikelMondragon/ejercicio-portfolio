@@ -37,21 +37,68 @@ nav ul li{
 .width-50{
     width: 50%;
 }
-
 .width-80{
     width: 80%;
 }
+.width-100{
+    width: 100%;
+}
+.width-100vh{
+    width: 100vw;
+}
 /*Heights*/
-.height-50{
-    height: 50%;
+.height-40{
+    height: 40%;
+}
+.height-60{
+    height: 60%;
 }
 .height-80{
     height: 80%;
 }
+.height-100{
+    height: 100%;
+}
+.height-400p{
+    height: 400px;
+}
+.height-100vh{
+    height: 100vh;
+}
+
+.object-fit-cover{
+    object-fit: cover;
+}
+
+/*Positions*/
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+.position-fixed{
+    position: fixed;
+}
+.z-index--1{
+    z-index: -1;
+}
+
+/*Paddings*/
+.padding-1em{
+    padding: 1em;
+}
+.padding-2em{
+    padding: 2em;
+}
+
 
 /*Margins*/
-.margin-r-10p{
-    margin-right: 10px;
+.margin-r-30p{
+    margin-right: 30px;
+}
+.margin-l-30p{
+    margin-left: 30px;
 }
 .margin-5-20{
     margin: 5% 20%;
@@ -60,7 +107,9 @@ nav ul li{
     margin: 5% 10%;
 }
 
-/*Radius*/
+
+
+/*Borders*/
 .circle-radius{
     border-radius: 300px;
 }
@@ -68,10 +117,20 @@ nav ul li{
 .soft-circle-radius{
     border-radius: 5px;
 }
-/*Display*/
+/*Flex*/
 .display-flex{
     display: flex;
 }
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-right{
+    justify-content: right;
+}
+.gap-5{
+    gap: 5%;
+}
+/*Grid*/
 .display-grid{
     display: grid;
 }
@@ -84,7 +143,100 @@ nav ul li{
 .grid-columns-2{
     grid-template-columns: repeat(3, 1fr);
 }
+/*Lists*/
+.list-style-square{
+    list-style-type: square;
+}
+.list-style-circle{
+    list-style-type: circle;
+}
+.list-style-none{
+    list-style-type: none;
+}
+/*Text*/
+.font-size-80{
+    font-size: 80%;
+}
+/*Box shadows*/
+.box-shadow-3{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+}
+/*Background*/
+.background-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.background-udalaitz{
+    background-image: url("../images/udalaitz.jpg");
+}
+.background-arrasate{
+    background-image: url("../images/arrasate.jpg");
+}
+/*Video*/
+.pointer-events-none{
+    pointer-events: none;
+}
 
+/*Animations*/
+.hover-animation-rotate:hover{
+    animation: rotateAnimation 1.5s linear infinite;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hover-animation-scale {
+  transition: transform 0.3s ease;
+}
+.hover-animation-scale:hover{
+    animation: scaleAnimation 0.5s linear;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.animation-from-left {
+  animation: moveFromLeft 1.5s ease-out forwards;
+}
+
+@keyframes moveFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animation-from-right {
+  animation: moveFromRight 1.5s ease-out forwards;
+}
+
+@keyframes moveFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 
 /*Debug*/
@@ -93,6 +245,9 @@ nav ul li{
 }
 .test2{
     background-color: pink;
+}
+.test3{
+    background-color: greenyellow;
 }
 
 /*---------------Biografia----------------*/
@@ -107,12 +262,29 @@ nav ul li{
     .flex-container{
         display:block;
     }
+    .t-background-image{
+        position: absolute;
+        width: auto;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        opacity: 50%;
+    }
   }
   
   /* Tablet */
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
     /* Estilos específicos */
-    
+    .t-background-image{
+        position: absolute;
+        width: auto;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        opacity: 50%;
+    }
   }
   
   /* Escritorio grande */
@@ -129,11 +301,6 @@ nav ul li{
 
 
 /*Portfolio*/
-.front-grid{
-    
-    
-    gap: 1rem; 
-}
 
 .back-end-grid{
     display: grid;
