@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<body>
+<body class="background-color-gradient">
     <header>
         <h1>Contacto</h1>
     </header>
@@ -24,8 +24,8 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <form>
-            <fieldset>
+        <form class="margin-5-20 box-shadow-3 padding-1em">
+            <fieldset class="border-default margin-5-20">
                 <legend>Reunión</legend>
                 <div>
                     <label for="tipo-reunion">Tipo de reunión:</label>
@@ -50,7 +50,7 @@
                 </div>
 
             </fieldset>
-            <fieldset>
+            <fieldset class="border-default margin-5-20">
                 <legend>Datos de contacto</legend>
                 <div>
                     <label for="nombre">Nombre:</label>
@@ -70,8 +70,13 @@
                     <input type="tel" id="telefono" name="telefono" placeholder="123-456-7890">
                 </div>
             </fieldset>
-            <input type="reset" value="Limpiar formulario" tabindex="-1">
-            <input type="submit" value="Enviar">
+            <div class="margin-5-20">
+                <div class="margin-5-20">
+                    <input type="reset" value="Limpiar formulario" tabindex="-1">
+                    <input type="submit" value="Enviar">
+                </div>
+                
+            </div>
         </form>
     </main>
 </body>
